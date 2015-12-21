@@ -9,8 +9,8 @@
 6 silly lifecycle response-provider@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle response-provider@0.0.0~start: response-provider@0.0.0
 8 verbose lifecycle response-provider@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle response-provider@0.0.0~start: PATH: /home/kyle/local/lib/node_modules/npm/bin/node-gyp-bin:/home/kyle/Desktop/response-provider/node_modules/.bin:/home/kyle/local/bin:/usr/local/heroku/bin:/home/kyle/.rbenv/plugins/ruby-build/bin:/home/kyle/.rbenv/shims:/home/kyle/.rbenv/bin:/usr/local/heroku/bin:/home/kyle/.rbenv/plugins/ruby-build/bin:/home/kyle/.rbenv/shims:/home/kyle/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle response-provider@0.0.0~start: CWD: /home/kyle/Desktop/response-provider
+9 verbose lifecycle response-provider@0.0.0~start: PATH: /home/kyle/local/lib/node_modules/npm/bin/node-gyp-bin:/home/kyle/Desktop/response-creator/node_modules/.bin:/home/kyle/local/bin:/usr/local/heroku/bin:/home/kyle/.rbenv/plugins/ruby-build/bin:/home/kyle/.rbenv/shims:/home/kyle/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle response-provider@0.0.0~start: CWD: /home/kyle/Desktop/response-creator
 11 silly lifecycle response-provider@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle response-provider@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle response-provider@0.0.0~start: Failed to exec start script
@@ -25,7 +25,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:818:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid response-provider@0.0.0
-16 verbose cwd /home/kyle/Desktop/response-provider
+16 verbose cwd /home/kyle/Desktop/response-creator
 17 error Linux 3.13.0-63-generic
 18 error argv "/home/kyle/local/bin/node" "/home/kyle/local/bin/npm" "start"
 19 error node v5.3.0

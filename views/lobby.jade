@@ -1,9 +1,18 @@
 extends layout
 
 block content
-	h1= title  
-	p Welcome to Lobby - #{lobbyData.name} #{lobbyData.type}
-	p Users in this lobby (#{3}):
-	each user in lobbyData.users
-		#{user} 
+	h1 Welcome to Lobby #{lobbyData.name} - #{lobbyData.type}
+	p Users in this lobby (#{lobbyData.users.length}):
+	p
+		each user in lobbyData.users
+			| User: #{user.name} 
+	h2 Current Question: #{lobbyData.currentQuestion}
+	h4 Responses (#{lobbyData.currentResponses.length}):
+	div(class="response-list")
+		each response in lobbyData.currentResponses
+			div(class="response")
+				p #{response.user} - #{response.text}
+			
+
+
 
