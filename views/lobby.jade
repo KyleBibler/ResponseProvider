@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= title  
+	p Welcome to Lobby - #{lobbyName} #{lobbyType}
+	p Users in this lobby (#{users.length}):
+	each user in users
+		#{user} 
+
