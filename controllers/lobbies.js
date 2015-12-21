@@ -9,7 +9,7 @@ var getLobbyWithPermissionCheck = function(lobbyNum, callback) {
 		name: "Cool Lobby",
 		id: 1,
 		users: [{name: "Kyle"}, {name: "Cody"}, {name: "John"}],
-		type: "private",
+		isPublic: false,
 		showAnswersToOthers: false,
 		isAnonymous: false,
 		allowAnonymous: false,

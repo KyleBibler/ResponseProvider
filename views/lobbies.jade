@@ -3,4 +3,6 @@ extends layout
 block content
 	h1 Response Creator Lobbies
 	each lobby in lobbies
-		a(href='/lobbies/'+lobby.id) #{lobby.name} <br/>
+		a(href='/lobbies/'+lobby.id) #{lobby.name}
+			div(class="lobby")
+		br

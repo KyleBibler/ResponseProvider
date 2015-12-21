@@ -1,4 +1,5 @@
-var MongoClient = require('mongodb').MongoClient
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 var state = {
   db: null,
