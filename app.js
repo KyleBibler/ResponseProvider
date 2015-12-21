@@ -22,10 +22,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes for the main site of the app
-var main = require('./controllers/main');
-var lobbies = require('./controllers/lobbies');
-app.use('/', main);
-app.use('/lobbies', lobbies);
+app.use('/', require('./controllers/main'));
+app.use('/lobbies', require('./controllers/lobbies'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
