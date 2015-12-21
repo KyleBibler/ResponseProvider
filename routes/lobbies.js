@@ -31,8 +31,13 @@ var getLobbyList = function(filters, callback) {
 var createLobby = function(lobbyData, callback) {
 	//Do some db magic
 	var errors = [];
-	callback(errors);
+	return callback(errors);
 };
+
+var submitResponse = function(response, callback) {
+	var errors = [];
+	return callback(errors);
+}
 
 router.get('/:lobby?', function(req, res, next) {
 	if (req.params.lobby) {
@@ -50,8 +55,19 @@ router.get('/:lobby?', function(req, res, next) {
 	}
 });
 
-router.post('/createLobby', function(req, res, next) {
+router.get('/create-lobby', function(req, res, next) {
+	res.render('create-lobby', {});
+});
+
+router.post('/create-lobby', function(req, res, next) {
 	//
+	createLobby({}, function(errors) {
+		if(errors.length === 0) {
+			//Redirect to lobby
+		} else {
+			//Show errors
+		}
+	});
 });
 
 module.exports = router;

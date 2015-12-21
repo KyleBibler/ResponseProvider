@@ -1,0 +1,7 @@
+extends layout
+
+block content
+	h1 Create a lobby 	
+	p Users in this lobby (#{3}):
+	each user in lobbyData.users
+		#{user} 
