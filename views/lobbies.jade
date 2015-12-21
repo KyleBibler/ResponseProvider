@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  h1 Response Generator Lobbies  
-  a(href='/lobbies/12345') My Cool Lobby
+  h1 Response Generator Lobbies
+  each lobby in lobbies
+  	a(href='/lobbies/'+lobby.id) #{lobby.name}

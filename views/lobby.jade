@@ -2,8 +2,8 @@ extends layout
 
 block content
 	h1= title  
-	p Welcome to Lobby - #{lobbyName} #{lobbyType}
-	p Users in this lobby (#{users.length}):
-	each user in users
+	p Welcome to Lobby - #{lobbyData.name} #{lobbyData.type}
+	p Users in this lobby (#{lobbyData.users.length}):
+	each user in lobbyData.users
 		#{user} 
 
