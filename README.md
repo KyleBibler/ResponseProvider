@@ -1,7 +1,7 @@
 # ResponseProvider
  	Application to create lobbies and take responses to questions 	
-	### Run via command: 
+### Run via command: 
 	Development:
-		''''DEBUG=myapp:* npm start''''
+		```DEBUG=myapp:* npm start```
 	Production
-		''''npm start''''
+		```npm start```
